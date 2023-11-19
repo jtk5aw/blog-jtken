@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: 'Plotting me'
 pubDate: 2018-11-14
 updatedDate: 2023-11-18
@@ -34,7 +33,7 @@ for i in range(len(ratingsAndPages[0])):
 
 Now I had all the data organized and just had to plot it. The data lended itself to representation in bar and pie charts. Each of these are shown here and were created using matplotlib.
 
-![Bar chart and pie chart of pages read by rating](/images/GoodreadsPlotsWithoutTitle.png)
+![Bar chart and pie chart of pages read by rating](/GoodreadsPlotsWithoutTitle.png)
 
 Looking at the two charts showed promising signs! It seemed that I had been able to enjoy the majority of the time I spent reading. Well ... really it looked like I thought most of the books I'd read were average. So I guess the best way to say it is I *kinda* enjoyed the majority of the time I've spend reading.
 
@@ -61,7 +60,7 @@ for i in range(len(df2['Timestamp'])):
 
 It was very simple to convert the data from this form into a Seaborn heatmap. The resulting plot came out as follows.
 
-![Heat map of Instagram likes over time](/images/InstagramHeatmapLikesWithoutTitle.png)
+![Heat map of Instagram likes over time](/InstagramHeatmapLikesWithoutTitle.png)
 **Note**: I made my Instagram in July of 2013 and the data used to create this plot went up to September 2018.
 
 This image let me see how I initially was liking lots of pictures before stopping almost completely for three years. These three years were my Freshman through Junior years of high school when I wasn't as interested in using any social media. Then my likes picked back up again during my Senior year of high school and really hit a peak in October of 2017. This was during my first semester away at school and I had started using Instagram more to see what friends from home were up to. October is also a pretty "postable" month since all 31 days seem to be a celebration of Halloween in college.
@@ -122,7 +121,7 @@ for i in range(lengthOfColumns):
 
 These created arrays were then put into a data frame and plotted using the stripplot function. The color of each dot was determined based on what type of media it was. The plot generated is shown here.
 
-![Strip Plot of a weeks worth of Snaps sent](/images/SnapchatPlotWithoutTitle.png)
+![Strip Plot of a weeks worth of Snaps sent](/SnapchatPlotWithoutTitle.png)
 
 With this plot you can start to see what effects when I check my Snapchat. Monday through Thursday the data points start to cluster around 8:00 pm which is usually when I start winding down for the day. Then on Friday through Sunday the data is more consistent throughout the day because I have less to do and more time to be on my phone. It can also be seen that there's a pretty big gap on Sunday from around 12:00-3:00. This happens to be when this project was being assigned so I must have been paying attention. 😎
 

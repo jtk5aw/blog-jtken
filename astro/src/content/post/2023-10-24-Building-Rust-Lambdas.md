@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: 'Building Rust Lambdas'
 pubDate: 2023-10-24
 updatedDate: 2023-10-24

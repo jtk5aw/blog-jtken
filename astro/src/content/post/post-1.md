@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: 'My First Blog Post'
 pubDate: 2022-07-01
 updatedDate: 2022-07-01
