@@ -1,10 +1,15 @@
 ---
-layout: post
-title: Building Rust Lambdas
-published: false
+layout: ../../layouts/BlogPost.astro
+title: 'Building Rust Lambdas'
+pubDate: 2023-10-24
+updatedDate: 2023-10-24
+description: 'Post about writing Lambdas in Rust.'
+author: 'Jackson Kennedy'
+image:
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
+tags: ["rust", "lambda"]
 ---
-
-## Building Rust Lambdas
 
 In late 2022 Rust had start to come up in conversations at work and  online. Looking into it more I decided to dive into learning it. At the same time, I also wanted to try and build a website on AWS so I decided to kill two birds with one stone. I made a React site backed by an API running Rust lambdas; I decided to build this all using CDK. To make changes to the backend of the site I would compile and package the Rust code I'd written, then run `cdk deploy Service`. There were some different stages to this "compile and package the Rust code I'd written" step that I feel are worth writing about here. 
 
