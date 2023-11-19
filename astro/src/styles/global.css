@@ -135,60 +135,17 @@ hr {
 	}
 }
 
-.hamburger {
-	padding-right: 20px;
-	cursor: pointer;
-}
-
-.hamburger .line {
+.internal-links-large {
 	display: block;
-	width: 40px;
-	height: 5px;
-	margin-bottom: 10px;
-	background-color: black;
+	position: static;
+	width: auto;
+	background: none;
 }
 
-.expanded {
-	color: red;
-	display: none !important;
+.internal-links-large a {
+	display: inline-block;
 }
 
-@media screen and (min-width: 636px) {
-	.internal-links-large {
-		display: block;
-		position: static;
-		width: auto;
-		background: none;
-	}
-
-	.internal-links-large a {
-		display: inline-block;
-	}
-
-	.hamburger {
-		display: none;
-	 }
-}
-
-.internal-links-small {
-	display: none;
-}
-
-@media screen and (max-width: 636px) {
-	.internal-links-large {
-		display: none;
-	}
-
-	.internal-links-small {
-		display: flex;
-		justify-content: right;
-	}
-
-	.internal-links-small a {
-		display: inline-block;
-		padding: 5px;
-	}
-}
 
 
 .sr-only {
