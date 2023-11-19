@@ -2,7 +2,7 @@
 title: 'My First Blog Post'
 pubDate: 2023-11-19
 updatedDate: 2022-11-19
-description: 'This is the first post of my new Astro blog.'
+description: 'On Astro.'
 author: 'Jackson Kennedy'
 heroImage:
     url: 'https://docs.astro.build/assets/full-logo-light.png'
