@@ -135,6 +135,62 @@ hr {
 	}
 }
 
+.hamburger {
+	padding-right: 20px;
+	cursor: pointer;
+}
+
+.hamburger .line {
+	display: block;
+	width: 40px;
+	height: 5px;
+	margin-bottom: 10px;
+	background-color: black;
+}
+
+.expanded {
+	color: red;
+	display: none !important;
+}
+
+@media screen and (min-width: 636px) {
+	.internal-links-large {
+		display: block;
+		position: static;
+		width: auto;
+		background: none;
+	}
+
+	.internal-links-large a {
+		display: inline-block;
+	}
+
+	.hamburger {
+		display: none;
+	 }
+}
+
+.internal-links-small {
+	display: none;
+}
+
+@media screen and (max-width: 636px) {
+	.internal-links-large {
+		display: none;
+	}
+
+	.internal-links-small {
+		display: flex;
+		justify-content: right;
+	}
+
+	.internal-links-small a {
+		display: inline-block;
+		padding: 5px;
+	}
+}
+
+
 .sr-only {
 	border: 0;
 	padding: 0;
