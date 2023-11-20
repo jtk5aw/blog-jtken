@@ -9,7 +9,7 @@ image:
     alt: 'The full Astro logo.'
 tags: ["python", "dataviz", "the-bright-sessions"]
 ---
----
+
 With a little more experience writing these posts hopefully this is an improvement on the last. I'm going to talk about another data science project that I worked on; this time based on one of my favorite past times. I'll be analyzing the scripts for the podcast "The Bright Sessions". Definitely check it out if you haven't heard of it before! It just so happens that they post all of their scripts on their website so I thought I just had to use the data science skills I've been working on to dig a little deeper into what the show is about.
 
 # Scraping

@@ -10,7 +10,6 @@ image:
 tags: ["python", "dataviz"]
 ---
 
----
 Here's my first post to this page! In it I'll talk about my first experience working with data in Python. The datasets that I dug into were based on my personal history using Goodreads.com, Instagram and Snapchat. Getting clean and detailed data about how I've used each of these was surprisingly easy. Goodreads.com allowed me to download everything straight from their website while Instagram and Snapchat allowed me to make a request for the data and have it emailed to me.
 
 
