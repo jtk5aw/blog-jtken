@@ -15,7 +15,7 @@ Steps to get local dev server up
 
 1. `cd astro/` and then run `npm run build`
 2. In the root directly run `npx sst build`
-3. In the root director (i.e the SST app) run `npm sst deploy --stage prod`
+3. In the root director (i.e the SST app) run `npx sst deploy --stage prod`
 
 ## Misc
 
