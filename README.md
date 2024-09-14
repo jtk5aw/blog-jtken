@@ -7,6 +7,7 @@ Using SST to deploy to AWS. I am curious to see if that's worth it.
 
 Steps to get local dev server up
 
+0. Make sure that SSTV2 is installed. SSTV3 won't work. Use `npm install sst@two --save-exact` to download
 1. In the root directory (i.e the SST app) run `npx sst dev`
 2. `cd astro/` and then rn `npm run dev`
 3. At this point the dev server is running on local host
