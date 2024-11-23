@@ -20,5 +20,8 @@
   },
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@fontsource/fira-sans": "^5.1.0"
+  }
 }
