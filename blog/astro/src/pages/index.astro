@@ -20,21 +20,29 @@ const posts = (await getCollection('post')).filter(post => !post.data.ignore).so
         <style>
             .grid-container {
                 display: grid;
-                grid-template-columns: minMax(700px, 3fr) 1fr;
-                grid-auto-flow: column;
-                grid-auto-columns: minmax(260px, 1fr);
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: ". posts about";
+                gap: 10px;
+            }
+            .posts-section {
+                grid-area: posts;
+            }
+            .about-section {
+                grid-area: about;
             }
             ul {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 0.2rem;
                 list-style-type: none;
-                margin: 0;
+                margin: 0 auto;
                 padding: 0;
+                justify-content: center;
             }
             ul li {
                 width: calc(100% - 1rem);
                 white-space: nowrap;
+                text-align: center;
             }
             ul li * {
                 text-decoration: none;
@@ -46,11 +54,13 @@ const posts = (await getCollection('post')).filter(post => !post.data.ignore).so
             }
             ul li a {
                 display: flex;
+                flex-direction: row;
                 align-items: center;
+                justify-content: center;
             }
             .title {
-                padding-left: 20px;
                 margin: 0;
+                margin-left: 10px;
                 color: rgb(var(--black));
                 line-height: 1;
             }
@@ -82,7 +92,7 @@ const posts = (await getCollection('post')).filter(post => !post.data.ignore).so
     <body>
         <Header />
             <main class="grid-container">
-                <section class="posts">
+                <section class="posts-section posts">
                     <ul>
                         {
                         posts.map((post) => (
@@ -98,7 +108,9 @@ const posts = (await getCollection('post')).filter(post => !post.data.ignore).so
                         }
                     </ul>
                 </section>
+                <section class="about-section">
                 <About />
+                </section>
             </main>
             <Footer />
 <script>
