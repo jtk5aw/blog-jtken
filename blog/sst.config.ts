@@ -1,14 +1,23 @@
-import { SSTConfig } from "sst";
-import { Blog } from "./stacks/MyStack";
+/// <reference path="./.sst/platform/config.d.ts" />
 
-export default {
-  config(_input) {
+export default $config({
+  app(input) {
     return {
       name: "blog",
-      region: "us-west-1",
+      removal: input?.stage === "production" ? "remove" : "remove",
+      //protect: ["production"].includes(input?.stage),
+      home: "aws",
     };
   },
-  stacks(app) {
-    app.stack(Blog);
-  }
-} satisfies SSTConfig;
+  async run() {
+    const domainName =
+      $app.stage === "production"
+        ? "blog.jtken.com"
+        : `${$app.stage}.blog.jtken.com`;
+
+    const blog = new sst.aws.Astro("MyBlog", {
+      path: "astro/",
+      domain: domainName,
+    });
+  },
+});
